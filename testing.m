@@ -24,7 +24,7 @@ anom = 0;
 % arg = -90*pi/180;
 % anom = 0;
 
-orbit = construct_orbital_path(a,e,i,RAAN,arg,anom,mu_earth,0,dt,total_time);
+orbit = construct_orbital_path([a,e,i,RAAN,arg,anom],mu_earth,0,dt,total_time);
 ground_track = construct_ground_track(orbit,dt,0);
 
 %% 2D Ground Track Plot

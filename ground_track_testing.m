@@ -55,5 +55,5 @@ plot_ground_track(ground_track);
 hold off
 
 figure(2)
-plot_orbit(orbit,long_aries);
+plot_orbits(orbit,1:1:1000,'earth',0);
 hold off
